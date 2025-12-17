@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>روابطي</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 100px;
+    cursor: pointer;
+    color: #ff0000;
+    z-index: 1000;
+  }
+  .profile-wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  img.profile {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ccc;
+    display: block;
+  }
+  img.flag {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background: #fff;
+  }
+  .name {
+    text-align: center;
+  }
+  .name h2 {
+    margin: 0;
+    font-size: 42px;
+    color: #333;
+  }
+  .name h3 {
+    margin: 5px 0 0 0;
+    font-size: 32px;
+    color: #555;
+    font-weight: normal;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .icons a {
+    font-size: 210px;
+    text-decoration: none;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  .whatsapp { color: #25D366; }
+  .instagram { color: #E1306C; }
+  .facebook { color: #1877F2; }
+  .phone { color: #34A853; }
+  @media (max-width: 420px) {
+    .close-btn { font-size: 60px; top: 10px; right: 20px; }
+    .profile-wrap { width: 220px; height: 220px; }
+    img.flag { width: 70px; }
+    .name h2 { font-size: 28px; }
+    .name h3 { font-size: 20px; }
+    .icons a { font-size: 150px; gap: 30px; }
+  }
+</style>
+</head>
+<body>
+<div class="close-btn" onclick="window.close();">&times;</div>
+<div class="profile-wrap">
+  <img class="profile" src="صورة_شخصية_هنا.jpg" alt="">
+  <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg" alt="علم مصر">
+</div>
+<div class="name">
+  <h2>عقيد / محمد فراج</h2>
+  <h3>Colonel / Mohamed Farag</h3>
+</div>
+<div class="icons">
+<a class="phone" href="tel:+201004071100" target="_self">
+  <i class="fas fa-phone"></i>
+</a>
+<a class="whatsapp" href="https://wa.me/qr/T3KVT3R3HEKRG1" target="_self">
+  <i class="fab fa-whatsapp whatsapp"></i>
+</a>
+<a class="facebook" href="https://www.facebook.com/share/1AL1miwEDU/" target="_self">
+  <i class="fab fa-facebook-f facebook"></i>
+</a>
+<a class="instagram" href="https://www.instagram.com/vego98" target="_self">
+  <i class="fab fa-instagram instagram"></i>
+</a>
+</div>
+</body>
+</html>
